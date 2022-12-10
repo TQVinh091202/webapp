@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Smart </title>
+  <link rel="stylesheet" href="./rg." class="">
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    p{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    section{
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+    img{
+        width: 30%;
+        }
+    section .imgBx{
+      position: relative;
+      width: 50%;
+      height: 100%;
+    }
+    section .imgBx ::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(225deg, #e91e63, #03a9f4);
+      z-index: 1;
+      mix-blend-mode: screen;
+
+    }
+    section .imgBx img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    section .contentBx{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      background: #5d86b5;  
+        background: -webkit-linear-gradient(to right, #ce0cbe, #2a70c1); 
+        background: linear-gradient(to right, #970d89, #2a70c1);s
+    }
+    section .contentBx .formBx{
+    }
+    section .contentBx .formBx h2{
+      color: #fff;
+      font-weight: 600;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      border-bottom: 4px solid #ff4584;
+      display: inline-block;
+      letter-spacing: 1px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    section .contentBx .formBx .inputBx{
+      margin-bottom: 20px;
+    }
+    section .contentBx .formBx .inputBx span{
+      font-size: 16px;
+      margin-bottom: 5px;
+      display: inline-block;
+      color: #ffffff;
+      font-weight: 300;
+      font-size: 16px;
+      letter-spacing: 1px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    section .contentBx .formBx .inputBx input{
+      width: 100%;
+      padding: 10px 20px;
+      outline: none;
+      font-weight: 400;
+      border: 1px solid #ffffff;
+      font-size: 16px;
+      letter-spacing: 1px;
+      color: #ffffff;
+      background: transparent;
+      border-radius: 30px;
+    }
+    section .contentBx .formBx .inputBx input[type="submit"]{
+      background: #ff4584;
+      color: #fff;
+      outline: none;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+    }
+    section .contentBx .formBx .inputBx input[type="submit"]:hover{
+      background: #f53677;
+    }
+    section .contentBx .formBx .remember{
+      margin-bottom: 10px;
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    section .contentBx .formBx .inputBx p a{
+      color: #ffffff;
+    }
+    section .contentBx .formBx h3{
+      color: #ffffff;
+      text-align: center;
+      margin: 80px 0 10px;
+      font-weight: 500;
+    }
+    section .contentBx .formBx .sci{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    section .contentBx .formBx .sci li{
+      list-style: none;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      border-radius: 50%;
+      margin: 0 7px;
+      cursor: pointer;
+    }
+    section .contentBx .formBx .sci li :hover{
+      background: #ff4584;
+    }
+    section .contentBx .formBx .sci li img{
+      transform: scale(0.5);
+      filter: invert(1);
+    }
+    @media (max-width: 768px) {
+      section .imgBx{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      section .contentBx{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      section .contentBx .formBx{
+        width: 100%;
+        padding: 40px;
+        background: rgba(17, 17, 17, 0.9);
+        margin: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="imgBx">
+      <img src="./img/pexels-photo-4210234.jpeg" alt="">
+    </div>
+    <div class="contentBx">
+      <div class="formBx">
+        <h2>Login</h2>
+        <form>
+          <div class="inputBx">
+            <span>Username</span>
+            <input type="text">
+          </div>
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="password">
+          </div>
+          <div class="remember">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <div class="inputBx">
+            <span>Password</span>
+            <input type="submit" value="Sign in" > 
+          </div>
+          <div class="inputBx">
+            <p>Don't have an account? <a href="./thongtin.html">Sign up</a></p>
+          </div>
+        </form>
+        <h3>Login with social media</h3>
+        <ul class="sci">
+          <li><img src="./img/vinh.jpg" alt=""></li>
+          <li><img src="./img/dung.jpg" alt=""></li>
+          <li><img src="./img/vinhh.jpg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
